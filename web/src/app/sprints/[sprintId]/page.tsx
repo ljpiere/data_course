@@ -59,7 +59,7 @@ export default async function SprintPage({ params }: PageProps) {
                                 View Notebook
                             </Link>
                             <a
-                                href={`/notebooks/${webinar.filename}`}
+                                href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/notebooks/${webinar.filename}`}
                                 download
                                 className="inline-flex items-center justify-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 w-full sm:w-auto"
                             >

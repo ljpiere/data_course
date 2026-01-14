@@ -65,7 +65,7 @@ export default async function NotebookPage({ params }: PageProps) {
                             Back to Course
                         </Link>
                         <a
-                            href={`/notebooks/${decodingFilename}`}
+                            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/notebooks/${decodingFilename}`}
                             download
                             className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm font-medium"
                         >
