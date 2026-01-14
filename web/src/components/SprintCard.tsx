@@ -11,19 +11,19 @@ export default function SprintCard({ sprint }: SprintCardProps) {
     const theoreticalCount = sprint.webinars.filter(w => w.type === 'Theoretical').length;
 
     return (
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow p-6 flex flex-col h-full">
+        <div className="bg-slate-800 rounded-xl shadow-sm border border-slate-700 hover:shadow-md hover:border-slate-600 transition-all p-6 flex flex-col h-full">
             <div className="mb-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-1">{sprint.title}</h3>
-                <p className="text-sm text-gray-500">{sprint.webinars.length} Webinars</p>
+                <h3 className="text-xl font-bold text-slate-100 mb-1">{sprint.title}</h3>
+                <p className="text-sm text-slate-400">{sprint.webinars.length} Webinars</p>
             </div>
 
-            <div className="flex gap-4 mb-6 text-sm text-gray-600">
+            <div className="flex gap-4 mb-6 text-sm text-slate-400">
                 <div className="flex items-center gap-1.5">
-                    <BookOpen className="w-4 h-4 text-blue-500" />
+                    <BookOpen className="w-4 h-4 text-blue-400" />
                     <span>{theoreticalCount} Theory</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                    <Code className="w-4 h-4 text-green-500" />
+                    <Code className="w-4 h-4 text-emerald-400" />
                     <span>{practicalCount} Practice</span>
                 </div>
             </div>
@@ -31,7 +31,7 @@ export default function SprintCard({ sprint }: SprintCardProps) {
             <div className="mt-auto">
                 <Link
                     href={`/sprints/${sprint.id}`}
-                    className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors gap-2"
+                    className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors gap-2"
                 >
                     View Content
                     <ArrowRight className="w-4 h-4" />

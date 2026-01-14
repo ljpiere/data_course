@@ -3,11 +3,11 @@ import { BookOpen, Home, Layers } from 'lucide-react';
 
 export default function Navbar() {
     return (
-        <nav className="border-b border-gray-200 bg-white/75 backdrop-blur-lg sticky top-0 z-50">
+        <nav className="border-b border-slate-800 bg-slate-900/75 backdrop-blur-lg sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     <div className="flex-shrink-0 flex items-center gap-2">
-                        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-blue-600">
+                        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-blue-400">
                             <BookOpen className="h-6 w-6" />
                             <span>DataCourse</span>
                         </Link>
@@ -27,7 +27,7 @@ function NavLink({ href, children, icon }: { href: string; children: React.React
     return (
         <Link
             href={href}
-            className="inline-flex items-center gap-2 px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900 border-b-2 border-transparent hover:border-blue-500 transition-colors"
+            className="inline-flex items-center gap-2 px-1 pt-1 text-sm font-medium text-slate-400 hover:text-slate-100 border-b-2 border-transparent hover:border-blue-400 transition-colors"
         >
             {icon}
             {children}
